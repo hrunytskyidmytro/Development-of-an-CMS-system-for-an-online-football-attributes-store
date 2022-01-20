@@ -127,7 +127,7 @@ $user = $userModel->GetCurrentUser();
 
     <div class="container">
         <h1 class="mt-5"><?=$PageTitle?></h1>
-        <? if (!empty($MessageText)) :?>]
+        <? if (!empty($MessageText)) :?>
             <div class="alert alert-<?=$MessageClass?> my-message" role="alert">
                 <?=$MessageText?>
             </div>

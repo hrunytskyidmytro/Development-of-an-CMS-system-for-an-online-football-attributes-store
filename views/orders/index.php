@@ -1,3 +1,4 @@
+<? if(!empty($lastOrders)) :?>
 <div>
     <table class="table table-dark table-striped text-center">
         <tr>
@@ -22,3 +23,6 @@
         <? endforeach;?>
     </table>
 </div>
+<?php else:?>
+    <div class="alert alert-primary" role="alert">Придбані товари відсутні</div>
+<? endif;?>
