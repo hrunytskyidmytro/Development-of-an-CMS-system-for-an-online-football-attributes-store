@@ -24,7 +24,7 @@ class Orders extends Controller
     public function actionIndex()
     {
         global $Config;
-        $title = 'Куплені товари';
+        $title = 'Придбані товари';
         $lastOrders = $this->ordersModel->GetLastOrders($Config['NewsCount']);
         return $this->render('index',['lastOrders' => $lastOrders],[
             'PageTitle'=>$title,
