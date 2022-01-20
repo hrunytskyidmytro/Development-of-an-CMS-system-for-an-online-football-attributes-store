@@ -79,7 +79,7 @@ class Model
             $row ['tovar_photo'] = $tovar[$i]['tovar_photo'];
             $row ['tovar_price'] = $tovar[$i]['tovar_price'];
             $row ['tovar_size'] = $tovar[$i]['tovar_size'];
-            $row ['tovar_count'] = 1;
+            $row ['tovar_count'] = $tovar[$i]['tovar_count'];
             $row['datetime'] = date('Y-m-d H:i:s');
             $row ['name_category'] = $tovar[$i]['name_category'];
             $id = \core\Core::getInstance()->getDB()->insert('orders',$row);
