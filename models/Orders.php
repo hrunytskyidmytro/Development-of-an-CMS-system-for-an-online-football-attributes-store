@@ -35,11 +35,11 @@ class Orders extends Model
             return $result;
         }
 
-        $fields = ['title','short_text','text'];
+        $fields = ['tovar_title','tovar_photo','tovar_price','tovar_size','name_category','tovar_count'];
         $rowFiltered = Utils::ArrayFilter($row, $fields);
         $rowFiltered['datetime'] = date('Y-m-d H:i:s');
         $rowFiltered['user_id'] = $user['id'];
-        $rowFiltered['photo'] = '...photo...';
+        $rowFiltered['photo_count'] = '...photo...';
         $id = \core\Core::getInstance()->getDB()->insert('orders',$rowFiltered);
         return [
             'error' => false,
@@ -87,7 +87,7 @@ class Orders extends Model
         if(is_array($validateResult))
             return $validateResult;
 
-        $fields = ['title','short_text','text','photo'];
+        $fields = ['tovar_title','tovar_photo','tovar_price','tovar_size','name_category','tovar_count'];
         $rowFiltered = Utils::ArrayFilter($row, $fields);
         $rowFiltered['datetime_lastedit'] = date('Y-m-d H:i:s');
         \core\Core::getInstance()->getDB()->update('orders', $rowFiltered, ['id' => $id]);
