@@ -1,0 +1,25 @@
+.news-record{
+    overflow: hidden;
+}
+
+.news-record .photo svg, .news-record .photo img{
+    padding: 10px;
+}
+
+.news .bd-placeholder-img.rounded{
+    padding: 10px 10px 10px 0;
+}
+
+.news .table-sizes{
+    border: 1px solid black;
+}
+
+.link-dark{
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.news .bd-placeholder-img.rounded{
+    padding: 10px 10px 10px 0;
+}
+
