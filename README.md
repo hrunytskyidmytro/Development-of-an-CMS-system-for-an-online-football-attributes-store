@@ -1,6 +1,6 @@
-# course projectWeb
+# CMS online football attributes store
 
-Курсова робота. Груницький Дмитро ІПЗ-20-3(1) Web-технології Ч.2
+Курсова робота. Груницький Дмитро, ІПЗ-20-3, Web-технології Ч.2
 
 ## Getting started
 
